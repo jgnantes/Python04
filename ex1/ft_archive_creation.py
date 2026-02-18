@@ -1,4 +1,4 @@
-def ft_archive_creation(file_name: str):
+def ft_archive_creation(file_name: str) -> None:
     """"""
     try:
         file = open(file_name, 'w')
@@ -8,7 +8,7 @@ def ft_archive_creation(file_name: str):
         return
 
     print(f"Initializing new storage unit: {file_name}")
-    print(f"Storage unit created successfully...\n")
+    print("Storage unit created successfully...\n")
     print("Inscribing preservation data...")
     file.write("[ENTRY 001] New quantum algorithm discovered\n")
     print("[ENTRY 001] New quantum algorithm discovered")

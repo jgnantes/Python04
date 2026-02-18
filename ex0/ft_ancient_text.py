@@ -1,4 +1,4 @@
-def ft_ancient_text(file_name: str):
+def ft_ancient_text(file_name: str) -> None:
     """"""
     try:
         file = open(file_name, 'r')
