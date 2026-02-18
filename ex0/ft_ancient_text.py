@@ -1,7 +1,4 @@
-import sys
-
-
-def ancient_text(file_name: str):
+def ft_ancient_text(file_name: str):
     """"""
     try:
         file = open(file_name, 'r')
@@ -20,4 +17,4 @@ def ancient_text(file_name: str):
 
 if __name__ == "__main__":
     print("=== CYBER ARCHIVES - DATA RECOVERY SYSTEM ===\n")
-    ancient_text('ancint_fragment.txt')
+    ft_ancient_text('ancint_fragment.txt')
