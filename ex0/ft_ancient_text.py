@@ -1,5 +1,5 @@
 def ft_ancient_text(file_name: str) -> None:
-    """"""
+    """Opens a file and prints its content"""
     try:
         file = open(file_name, 'r')
         text: str = file.read()
@@ -7,6 +7,10 @@ def ft_ancient_text(file_name: str) -> None:
     except (FileNotFoundError, PermissionError) as e:
         print(f"A {type(e).__name__} occured: '{e}'")
         print(f"The file {file_name} could no be found or accessed")
+        return
+    except Exception as e:
+        print(f"A {type(e).__name__} occured: '{e}'")
+        print("The program cannot continue")
         return
 
     print(f"Accesing Storage Vault: {file_name}")

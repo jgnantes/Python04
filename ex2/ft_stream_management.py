@@ -2,7 +2,8 @@ import sys
 
 
 def ft_stream_management() -> None:
-    """"""
+    """Collects archivist input and demonstrates proper
+    separation of standard and alert communication streams."""
     id: str = input("Input Stream active. Enter archivist ID: ")
     report: str = input("Input Stream active. Enter status report: ")
 
